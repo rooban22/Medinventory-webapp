@@ -1,0 +1,200 @@
+{% extends 'appui/base.html' %}
+ {% block content %}
+
+<form class ="min-h-fill flex flex-col items-center justify-center" method="POST" enctype="multipart/form-data">
+    {% csrf_token %} 
+  <div class="w-36 h-4  ..."></div>
+      <div
+        class="
+          
+          flex flex-col
+          bg-white
+          shadow-lg 
+          shadow-indigo
+          px-4
+          sm:px-6
+          md:px-8
+          lg:px-10
+          py-8
+          rounded-lg
+          w-50
+          max-w-md
+        "
+      >
+        <div class="font-medium self-center text-xl sm:text-3xl text-gray-800">
+          🛒Add Medicine
+        </div>
+        
+
+        <div class="mt-10">
+          <form action="#">
+            <div class="flex flex-col mb-5">
+              <label
+                for="title"
+                class="mb-1 text-xs tracking-wide text-gray-600"
+                >title</label
+              >
+              <div class="relative">
+                <div
+                  class="
+                    inline-flex
+                    items-centre
+                    justify-centre
+                    absolute
+                    left-0
+                    top-0
+                    h-full
+                    w-10
+                    text-gray-400
+                  "
+                >
+                  <i class="fas fa-user text-blue-500"></i>
+                </div>
+
+                <input
+                  id="title"
+                  type="text"
+                  name="title"
+                  class="
+                    text-sm
+                    placeholder-gray-500
+                    pl-2
+                    pr-4
+                    rounded-lg
+                    border border-gray-400
+                    w-full
+                    py-2
+                    focus:outline-none focus:border-blue-400
+                  "
+                  placeholder="title" />
+
+               <label
+                for="price"
+                class=" text-xs tracking-wide text-gray-600"
+                >Price:</label>
+                  
+             <div class="relative">
+                <div
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    absolute
+                    left-0
+                    top-0
+                    h-full
+                    w-10
+                    text-gray-400
+                  "
+                >
+                  <i class="fas fa-user text-blue-500"></i>
+                </div>
+             <input
+                  id="price"
+                  type="text"
+                  name="price"
+                  class="
+                    text-sm
+                    placeholder-gray-500
+                    pl-2
+                    pr-4
+                    rounded-lg
+                    border border-gray-400
+                    w-full
+                    py-2
+                    focus:outline-none focus:border-blue-400"
+                   placeholder="price">
+             <label
+                for="content"
+                class="mb-1 text-xs tracking-wide text-gray-600">Description:</label>
+                   
+              
+              <div class="relative">
+                <div
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    absolute
+                    left-0
+                    top-0
+                    h-full
+                    py-2
+                    w-10
+                    text-gray-400
+                  "
+                >
+                  <i class="fas fa-at text-blue-500"></i>
+                </div>
+
+                <input
+                  id="content"
+                  type="text"
+                  name="content"
+                  class="
+                    text-sm
+                    placeholder-gray-500
+                    pl-2
+                    pr-4
+                    rounded-lg
+                    border border-gray-400
+                    w-full
+                    py-8
+                    focus:outline-none focus:border-blue-400
+                  "
+                  placeholder="content"
+                />
+
+               <label
+                for="description"
+                class=" text-xs tracking-wide text-gray-600"
+                >description:</label>
+                  
+             <div class="relative">
+                <div
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    absolute
+                    left-0
+                    top-0
+                    h-full
+                    w-10
+                    text-gray-400
+                  "
+                >
+                  <i class="fas fa-user text-blue-500"></i>
+                </div>
+             <input
+                  id="description"
+                  type="text"
+                  name="description"
+                  class="
+                    text-sm
+                    placeholder-gray-500
+                    pl-2
+                    pr-4
+                    rounded-lg
+                    border border-gray-400
+                    w-full
+                    py-2
+                    focus:outline-none focus:border-blue-400"
+                   placeholder="description">
+              </div>
+            </div>
+
+            <div class="mb-5 ">
+    <label class="block text-grey-700 text-xs  mb-2 text-gray-400" for="">Select image</label>
+    
+    <input type="file" name="upload" id="upload">
+ </div>
+             <div class="mb-8 ">
+    <input class="text-white bg-blue-700 hover:bg-Fuchsia-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  focus:outline-none   transition ease-in-out delay-150 bg-Fuchsia-800 hover:-translate-y-1 hover:scale-110 hover:bg-Fuchsia-800 duration-300 ..." type="submit" accept="image/*" name="Add Product" value="Save Changes">
+ </div> 
+             
+      
+  </div>
+  </form> 
+{% endblock %} 
+
